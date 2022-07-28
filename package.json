@@ -134,7 +134,7 @@
     "dns-equal": "^1.0.0",
     "detect-libc": "^2.0.1",
     "dom-converter": "^0.2.0",
-    "dom-serializer": "^1.4.1",
+    "dom-serializer": "^2.0.0",
     "detect-node": "^2.1.0",
     "domelementtype": "^2.3.0",
     "domhandler": "^4.3.1",
