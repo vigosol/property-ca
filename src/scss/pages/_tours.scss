@@ -1,0 +1,197 @@
+.dashboardMain {
+  padding: 0 36px;
+  height: calc(100vh - 144px);
+  overflow-y: auto;
+}
+
+.mediaTour {
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 19px;
+  position: relative;
+
+  .mediatitle {
+    display: flex;
+
+    .img-holder {
+      width: 40%;
+      @include border-radius(10px);
+
+      img {
+        width: 100%;
+        @include border-radius(10px);
+      }
+    }
+
+    .media-content {
+      flex: 1;
+      padding-left: 16px;
+
+      h3 {
+        @include Montserrat(600);
+        font-size: $font18;
+        line-height: 150%;
+        color: $text-primary;
+        margin-bottom: 4px;
+      }
+
+      h4 {
+        margin-bottom: 0;
+        @include Montserrat(600);
+        font-size: $font14;
+        line-height: 150%;
+        color: $text-primary;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          width: 21px;
+          height: 21px;
+          border: 2px solid #07364B;
+          @include border-radius(50%);
+          margin-right: 4px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            @include border-radius(50%);
+            vertical-align: revert;
+          }
+        }
+
+        .media-body {
+          flex: 1;
+          @include Montserrat(400);
+          font-size: $font14;
+          line-height: 150%;
+          color: $text-primary;
+
+        }
+      }
+    }
+  }
+
+  .badgesList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: -16px;
+    right: 16px;
+
+    li {
+      margin-left: 12px;
+
+      span {
+        display: inline-flex;
+        align-items: center;
+        @include border-radius(12px);
+        font-weight: 500;
+        font-size: $font12;
+        line-height: 100%;
+        padding: 5px 10px;
+
+        &.badgeRed {
+          background: $danger;
+          color: $white;
+        }
+
+        &.badgeWarning {
+          background: $warning;
+          color: $white;
+        }
+
+        &.badgeOutlineDanger {
+          border: 1px solid $danger;
+          color: $danger;
+        }
+
+        &.badgeSuccess {
+          background: $success;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+.orderTags {
+  border: 1px solid $light;
+  @include border-radius(8px);
+  padding: 4px 10px;
+  margin-bottom: 8px;
+
+  &.tagDanger {
+    border: 1px solid $red;
+  }
+
+  &.tagWarning {
+
+    border: 1px solid $warning;
+  }
+
+  h4 {
+    margin: 0;
+    @include Montserrat(600);
+    font-size: $font14;
+    line-height: 150%;
+    color: $text-primary;
+  }
+
+  p {
+    margin: 0;
+    @include Montserrat(400);
+    font-size: $font14;
+    line-height: 150%;
+    color: $text-primary;
+
+  }
+}
+
+
+.media-cta {
+  display: flex;
+
+  .media-body {
+    flex: 1;
+    padding-right: 15px;
+
+    ul {
+      li {
+        margin: 8px 0;
+        text-align: center;
+
+        .btn {
+          min-width: 180px;
+          @include Montserrat(400);
+          font-size: $font14;
+
+          i {
+            margin-right: 8px;
+          }
+
+          &:disabled {
+            opacity: 0.3;
+          }
+        }
+
+        .note {
+          display: inline-flex;
+          background: $bg-gray;
+          border: 1px solid $bg-gray;
+          @include border-radius(4px);
+          @include Montserrat(500);
+          font-size: $font12;
+          line-height: 100%;
+          color: $body-color;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.user-card {
+  background: $white;
+  border: 1px solid $border;
+  @include border-radius(12px);
+  padding: 24px 30px 16px;
+
+  .userHeader {
+    text-align: center;
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 6px;
+      @include border-radius(50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+        @include border-radius(50%);
+        object-fit: cover;
+      }
+    }
+
+    .name {
+      text-align: center;
+      @include Montserrat(600);
+      font-size: $font14;
+      line-height: 150%;
+      text-align: center;
+      color: $primary;
+    }
+
+    .desg {
+
+      @include Montserrat(400);
+      font-size: $font12;
+      line-height: 150%;
+      text-align: center;
+      color: $text-secondary;
+      margin-bottom: 16px
+    }
+  }
+
+  .media-body {
+    .info {
+      .label {
+        @include Montserrat(400);
+        font-size: $font12;
+        line-height: 150%;
+        color: $grey200;
+      }
+
+      .dec {
+        @include Montserrat(400);
+        font-size: $font14;
+        line-height: 150%;
+        color: #373F47;
+
+      }
+    }
+
+    hr {
+      margin: 10px 0;
+      border-top: 1px solid #F1F1F1;
+      opacity: 1;
+
+    }
+  }
+
+  .cardFooter {
+    ul {
+      display: flex;
+      align-items: center;
+      margin: 24px -3.25px 0;
+
+      li {
+        padding: 0 3.25px;
+
+        .cta-outline-primary {
+          height: 40px;
+          background: $white;
+          border: 1px solid $border;
+          border-radius: 32px;
+          font-size: $font14;
+          @include Montserrat(500);
+        }
+
+        .cta-rounded {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          background: $white;
+          border: 1px solid $border;
+          border-radius: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  width: 100%;
+  background: $white;
+  box-shadow: inset -1px 0px 0px $light;
+  min-height: 100vh;
+
+  .brandname {
+    text-align: center;
+    padding: 24px 37.5px 28px;
+    min-height: 79px;
+    margin-bottom: 8px;
+  }
+
+  .stickyFooter,
+  .mainLinks {
+    li {
+      .cta-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 15px 0;
+        color: $text-secondary;
+        position: relative;
+
+        i {
+          padding: 0 24px;
+          display: inline-block;
+        }
+
+        span {
+          flex: 1;
+          padding-right: 10px;
+          display: block;
+        }
+
+        &.active {
+          color: $primary;
+          background: $gray200;
+
+          &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .mainLinks {
+    flex: 1;
+  }
+
+  .user {
+    margin: 28px 0;
+    display: flex;
+    padding: 0 24px;
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      @include border-radius(50%);
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .media-body {
+      flex: 1;
+
+      .name {
+        @include Montserrat(500);
+        font-size: $font16;
+        line-height: 100%;
+        color: $text-secondary;
+      }
+
+      .desig {
+        line-height: 150%;
+        @include Montserrat(400);
+        font-size: $font12;
+        line-height: 100%;
+        color: $text-secondary;
+      }
+    }
+  }
+
+  .copyrights {
+    @include Montserrat(400);
+    font-size: $font12;
+    line-height: 150%;
+    color: $text-secondary;
+    padding: 24px;
+    strong {
+      @include Montserrat(600);
+      color: $primary;
+    }
+  }
+}

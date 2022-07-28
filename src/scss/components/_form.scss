@@ -1,0 +1,32 @@
+.form-group {
+    margin-bottom: 16px;
+
+    label {
+        @include Montserrat(600);
+        font-size: $font16;
+        line-height: 166.5%;
+        color: $dark;
+        margin-bottom: 8px;
+
+        span {
+            color: $red;
+        }
+    }
+    .form-select,
+    .form-control {
+        border: 1px solid $gray100;
+        @include border-radius(8px);
+        height: 60px;
+        @include Montserrat(500);
+        font-size: $font14;
+        line-height: 166.5%;
+        color: $dark;
+        &:focus{
+            box-shadow: none;
+        }
+        &::placeholder {
+            color: rgba(33, 33, 33, 0.4);
+        }
+    }
+  
+}

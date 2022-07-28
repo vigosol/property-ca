@@ -1,0 +1,61 @@
+.controlBar {
+  padding: 16px 36px;
+  background: $white;
+  box-shadow: inset 0px 1px 0px $light, inset 0px -1px 0px $light;
+  display: flex;
+  align-items: center;
+
+  .filterLinks {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 8px;
+
+      a {
+        @include Montserrat(500);
+        font-size: $font14;
+        line-height: 100%;
+        color: $dark-100;
+        text-decoration: none;
+        padding:6px 14px;
+        border: 1px solid $border;
+        @include border-radius(32px);
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .searchField {
+    min-width: 239px;
+    position: relative;
+    .form-control {
+      border: 1px solid $border;
+      @include border-radius(32px);
+      @include Montserrat(500);
+      font-size: 14px;
+      height: 40px;
+      padding-right: 40px;
+      &::placeholder {
+        color: #D6DADE;
+      }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+
+    i {
+      right: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}

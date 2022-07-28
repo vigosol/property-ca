@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  min-height: 100vh;
+  @include Montserrat(400);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $gray200; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $gray; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $gray; 
+  }
+ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.main {
+  display: flex;
+
+  .content {
+    flex: 1;
+    width: calc(100% - 240px);
+  }
+}
+
+h2 {
+  @include Montserrat(600);
+  font-size: $font28;
+  line-height: 120%;
+  color: $text-primary;
+}

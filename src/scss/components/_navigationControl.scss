@@ -1,0 +1,30 @@
+.navigationControl {
+  display: flex;
+  padding: 16px 36px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .topNavLinks {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .btn {
+      @include border-radius(100px);
+      padding: 12px 20px;
+      height: 40px;
+      @include poppins(500);
+      font-size: $font14;
+
+      i {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .btn-rounded {
+    margin-left: 12px;
+  }
+}

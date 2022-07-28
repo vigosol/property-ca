@@ -1,0 +1,51 @@
+.brandBanner {
+  background: url(../images/bgImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+  padding: 36px;
+  @include poppins(400);
+}
+
+.form-wrapper {
+  max-width: 516px;
+  margin: 0 auto;
+  padding: 30px;
+
+  .cstTabs {
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    @include border-radius(8px);
+    height: 60px;
+    font-size: $font20;
+  }
+
+  .cta {
+    @include Montserrat(500);
+    font-size: $font14;
+    line-height: 150%;
+    text-align: right;
+    text-decoration-line: underline;
+    color: $primary;
+    display: inline-flex;
+    margin-bottom: 16px;
+  }
+
+  p {
+
+    @include Montserrat(500);
+    font-size: $font14;
+    line-height: 150%;
+    color: $primary;
+    margin: 23px 0 0;
+
+    a {
+      color: $primary;
+      text-decoration-line: underline;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.cstTabs{
+    display: flex;
+    li{
+        flex: 1;
+        a,
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border: none;
+            text-align: center;
+            padding: 12px;
+            border-bottom: 3px solid $gray;
+            width: 100%;
+            font-size: $font18;
+            color: $gray;
+            text-decoration: none;
+            &.active{
+                border-bottom: 3px solid $primary;
+                color: $primary;
+                @include poppins(600);
+            }
+        }
+    }
+}

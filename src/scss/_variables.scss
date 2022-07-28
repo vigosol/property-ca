@@ -1,0 +1,79 @@
+//---------------------------------------------
+//
+//  Variables
+//
+//    1. Bootstrap Fonts
+//    2. Bootstrap Globals
+//    3. Bootstrap Colors
+//    4. Bootstrap Container Width
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Bootstrap Fonts
+//---------------------------------------------
+
+$font-family-base: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+//---------------------------------------------
+// 2. Bootstrap Globals
+//---------------------------------------------
+
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+
+//---------------------------------------------
+// 3. Bootstrap Colors
+//---------------------------------------------
+
+$body-color: #000000; // The default text color
+
+$secondary: #6c757d;
+$success: #44C13C;
+$info: #0dcaf0;
+$warning: #FFCF0F;
+$danger: #E71B4C;
+$light: #F1F1F1;
+$gray:#D9D9D9;
+$primary:#07364B;
+$dark:#212121;
+$dark-100:#0C1116;
+$text-secondary:#4F5B67;
+$text-primary:#242D35;
+$red:#EB3800;
+$gray100:#949494;
+$white:#fff;
+$gray200:#F7F7FB;
+$border:#EAECEE;
+$bg-gray:#F4F5F5;
+$grey200:#A8B0B9;
+
+// Font
+$font12:12px;
+$font14:14px;
+$font16:16px;
+$font18:18px;
+$font20:20px;
+$font28:28px;
+
+//---------------------------------------------
+// 4. Bootstrap Container Width
+//---------------------------------------------
+
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px);
