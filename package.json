@@ -88,7 +88,7 @@
     "camel-case": "^4.1.2",
     "callsites": "^3.1.0",
     "caniuse-lite": "^1.0.30001368",
-    "chalk": "^2.4.2",
+    "chalk": "^5.0.1",
     "chokidar": "^3.5.3",
     "chownr": "^1.1.4",
     "chrome-trace-event": "^1.0.3",
